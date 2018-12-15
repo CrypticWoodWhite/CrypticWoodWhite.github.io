@@ -1,0 +1,106 @@
+html {
+    background-image: url(../Images/Background.png);
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    background: transparent;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+nav.navbar {
+    padding: 0px; 
+}
+
+
+.navbar-header {
+    background-color:#4aaaa5;
+    color:#ffffff;
+    padding: 5px;
+    margin-left: -14px;
+}
+
+.fixed-top {
+    background-color:#ffffff;
+    border-bottom: #cccccc 1px solid;
+}
+
+.fixed-bottom {
+    background-color:#666666;
+    border-top:#4aaaa5 8px solid;
+    color: #ffffff;
+}
+
+li {
+    padding-inline-start: 20px;
+}
+
+a {
+    color: #777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;"
+}
+
+a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: -10px;
+    padding: 20px;
+}
+
+h4 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color:#4aaaa5;
+    padding-bottom: 10px;
+    border-bottom: #dddddd 2px solid;
+    margin-bottom: 20px;
+}
+
+.figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.figure:hover {
+    border: #dddddd 1px solid;
+    padding: 5px 5px 5px 5px;
+}
+
+.figure-caption {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    background-color:#4aaaa5;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 10%;
+    right: 0px;
+    left: 0px;
+}
+
+.figure-caption:hover {
+
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    color: #777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
