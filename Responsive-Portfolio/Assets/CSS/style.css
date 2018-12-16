@@ -11,7 +11,6 @@ body {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: transparent;
     color: #777777;
-    border: #dddddd 1px solid;
 }
 
 header {
@@ -61,7 +60,7 @@ section {
 
 .general {
     width:960px;
-    height: 2000px;
+    height: auto;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 100px;
@@ -199,4 +198,65 @@ footer {
     font-size: 75%;
     text-align: center;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*I had a lot of difficulty with this assignment. Changing the settings for one viewport size affects the settings for the other viewports, which I found difficult to account for. The floats for the navbar reversed the list order for my navigation links, which I know is expected behavior but could not find a good way to reverse. I could not get the navbar's width in the smallest viewport to be correct. Also, for a while, the width of the main contents were good through all the viewport sizes, then all of sudden would not be 100% for the smallest viewport. I could not figure out what settings affected that.*/
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+    ul.navbar {
+        float: left;
+    }
+    li.name {
+        float: none;
+        display: block;
+        padding-left: 40px;
+        width: 100%;
+        overflow: hidden;
+    }
+    li.nav {
+        float: right;
+        display: block;
+    }
+    .general {
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0 auto;
+        margin-left: 0 auto;
+        border-top: #dddddd 1px solid;
+        border-bottom: #dddddd 1px solid;
+    }
+    footer {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ul.navbar {
+        float: none;
+    }
+    li.name {
+        float: none;
+        padding-left: 40px;
+        display: inline-block;
+    }
+    li.nav {
+        float: none;
+        display: inline-block;
+    }
+    .general {
+        width: 90%;
+        margin-right: 0 auto;
+        margin-left: 0 auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .general {
+        width: 80%;
+        margin-right: 0 auto;
+        margin-left: 0 auto;
+    }
 }
