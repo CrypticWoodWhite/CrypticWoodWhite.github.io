@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        <title>Hangman!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="text-center">Hangman...</h1>
+            <h2 class="text-center">The wildlife biology edition!</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="text-center" id="directions">
+                        <h6>Press the space bar to get started!</h6>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-1"></div>
+                <div class="col-4">
+                        <div class="text-center">
+                            <h6>Guess this word:</h6>
+                        </div>
+                        <div class="text-center mb-1" id="word-to-be-guessed"><br/></div>
+                    <img src="Assets/images/hangman.jpg" alt="" class="img-fluid mx-auto d-block" id="picture">
+                    <div class="text-center" id="win-lose-message"></div>
+                </div>
+                <div class="col-6">
+                    <div class="text-center">
+                        <h6>Number of guesses remaining:</h6>
+                    </div>
+                    <div class="text-center mb-1" id="guesses-remaining">10</div>
+                    <div class="text-center">
+                        <h6>Letters already guessed:</h6>
+                    </div>
+                    <div class="text-center mb-1" id="letters-guessed"><br></div>
+                    <div class="text-center">
+                        <h6>Wins:</h6>
+                    </div>
+                    <div class="text-center mb-1" id="wins">0</div>
+                    <div class="text-center">
+                        <h6>Losses:</h6>
+                    </div>
+                    <div class="text-center mb-1" id="losses">0</div>
+                    <br>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row" id="footer">
+                <div class="col-12"><br><br></div>
+            </div>
+        </div>
+
+        <script src="Assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
