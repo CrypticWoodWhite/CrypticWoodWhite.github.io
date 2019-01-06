@@ -107,25 +107,31 @@ function checkGuess(GUESS) {
 // what happens when you win
 function youWin() {
     var STARTGAME = false;
-    document.getElementById("win-lose-message").textContent = "You win, you magnificent golden eagle!";
     STATS.wins = STATS.wins++;
     document.getElementById("wins").textContent = STATS.wins;
-}
-
-// what happens when you lose
-function youLose() {
-    var STARTGAME = false;
-    document.getElementById("win-lose-message").textContent = "You lose, you deflated fried egg jellyfish!";
-    STATS.losses = STATS.losses++;
-    document.getElementById("losses").textContent = STATS.losses;
-}
-
-// start new game after previous game
-if (STARTGAME == false) {
+    document.getElementById("win-lose-message").textContent = "You win, you magnificent golden eagle!";
+    documents.getElementByID("picture").src = "Assets/images/bat.jpg";
     if (confirm("Do you want to continue playing?")) {
         newGame();
     }
     else {
         alert("Thanks for playing! Goodbye!");
+        clear();
+    }
+}
+
+// what happens when you lose
+function youLose() {
+    STATS.losses = STATS.losses++;
+    document.getElementById("losses").textContent = STATS.losses;
+    var STARTGAME = false;
+    document.getElementById("win-lose-message").textContent = "You lose, you deflated fried egg jellyfish!";
+    documents.getElementByID("picture").src = "Assets/images/shrike.jpg";
+    if (confirm("Do you want to continue playing?")) {
+        newGame();
+    }
+    else {
+        alert("Thanks for playing! Goodbye!");
+        clear();
     }
 }
