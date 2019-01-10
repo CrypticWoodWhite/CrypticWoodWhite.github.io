@@ -1,0 +1,31 @@
+html {
+    background-image: url(../images/rocks.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.jumbotron {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+img {
+    max-height: 150px;
+    width: auto;
+    min-height: 75px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
