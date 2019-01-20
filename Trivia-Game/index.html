@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        <title>Trivia</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="jumbotron text-center mb-4">
+            <h1>Totally Trivial Trivia!</h1>
+            <h6>Trivia: Details, considerations, or pieces of information of little importance or value.</h6>
+            <h6>Also: A quizzing game involving obscure facts, like this one.</h6>
+        </div>
+        <div class="container text-center">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div id="start">
+                        <button type="button" class="btn btn-primary" id="startButton">LET'S GO</button>
+                    </div>
+                    <div id="message" class="hidden"></div>
+                    <div id="end-game" class="hidden">
+                        <p><strong>Game over!</strong></p>
+                        <p id="number-correct-guesses">Correct guesses: 0</p>
+                        <p id="number-wrong-guesses">Wrong guesses: 0</p>
+                        <p id="number-timeouts">Timeouts: 0</p>
+                        <button type="button" class="btn btn-secondary" id="restart">Start over</button>
+                    </div>
+                    <div id="time-remaining" class="hidden">
+                        <p id="timer">Time remaining:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h4><div id="question" class="hidden">
+                        Are you ready for this piece of trivia?
+                    </div></h4>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div id="answers" class="hidden">
+                        <button type="button" class="btn btn-light answers" id="answer-A">A. </button><br><br>
+                        <button type="button" class="btn btn-light answers" id="answer-B">B. </button><br><br>
+                        <button type="button" class="btn btn-light answers" id="answer-C">C. </button><br><br>
+                        <button type="button" class="btn btn-light answers" id="answer-D">D. </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Assets/javascript/data.js"></script>
+        <script src="Assets/javascript/app.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,30 @@
+html {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+/* I seem to have a thing for transparent backgrounds */
+body {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#container {
+    width: 80%;  
+}
+
+div.jumbotron {
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+    padding: 2em;
+}
+
+/* this class is for hiding the divs that contain correct/incorrect/timeout/game over messages */
+.hidden {
+    display: none;
+}
