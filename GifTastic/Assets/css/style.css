@@ -1,0 +1,18 @@
+body {
+    background: #696969;
+}
+
+div.jumbotron-fluid {
+    background: #303030;
+    color: lightgray;
+    padding: 2em;
+}
+
+.container-fluid {
+    width: 80%;
+}
+
+footer {
+    background: #303030;
+    padding: 1em;
+}
