@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        <title>Train schedule</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="jumbotron text-center mb-4">
+            <h1>Train schedule</h1>
+        </div>
+
+        <div class="container text-justify">
+            <div class="row mb-4">
+                <div class="col" id="clock">
+                    <!--Clock dynamically updates-->
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col" id="train-schedule">
+                    <h3>Train schedule</h3>
+                    <table class="table table-hover table-sm" id="trains">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col"><strong>Name</strong></th>
+                                <th scope="col"><strong>Destination</strong></th>
+                                <th scope="col"><strong>Frequency (min)</strong></th>
+                                <th scope="col"><strong>Next arrival</strong></th>
+                                <th scope="col"><strong>Minutes away</strong></th>
+                                <th scope="col"><strong>Remove</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        <!--Table body dynamically updates-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col" class="add-train-here">
+                    <h3>Add new train</h3>
+                    <form id="form">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="train-name" class="col-form-label-sm">Train name</label>
+                                <input type="text" class="form-control form-control-sm mr-2 mb-2" placeholder="Name" id="train-name">
+                                <label for="first-train-time"class="col-form-label-sm">First train time (24hr)</label>
+                                <!--Learned that for input type="time" whether it renders as 12 or 24hr format depends on the browser-->
+                                <input type="time" class="form-control form-control-sm mr-2 mb-2" id="first-train-time">
+                            </div>
+                            <div class="col">
+                                <label for="destination"class="col-form-label-sm">Destination</label>
+                                <input type="text" class="form-control form-control-sm mr-2 mb-2" placeholder="Destination" id="destination">
+                                <label for="frequency"class="col-form-label-sm">Frequency (min)</label>
+                                <input type="number" min="1" class="form-control form-control-sm mr-2 mb-2" placeholder="Frequency" id="frequency">
+                                <button type="submit" class="btn btn-primary btn-sm mr-2 mb-2" id="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col" id="footer">
+                    <blockquote class="blockquote">
+                        <p>“Trains tap into some deep American collective memory.”</p>
+                        <footer class="blockquote-footer">Dana Frank, <cite>Local Girl Makes History: Exploring Northern California's Kitsch Monuments</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!--Javascript libraries-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+        <script src="Assets/javascript/script.js"></script>
+
+    </body>
+
+</html>
