@@ -59,6 +59,14 @@ trainDatabase.ref().on("child_added", function(childSnapshot) {
     var minAway = tFreq - tRemainder;
     var nextArrival = moment().add(minAway, "minutes").format("HH:mm");
 
+    // update minAway and nextArrival
+    var updateTrainSchedule = function() {
+        var now = moment();
+        minAway = tFreq - tRemainder;
+        nextArrival = now.add(minAway, "minutes").format("HH:mm");
+    }
+    setInterval(updateTrainSchedule, 60000);
+
     // get the firebase key for the new train
     var key = childSnapshot.key;
     console.log("Key: " + key);
