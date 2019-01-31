@@ -10,7 +10,7 @@ firebase.initializeApp(config);
 
 var trainDatabase = firebase.database();
 
-// show current time
+// show current time 
 var updateTime = function() {
     var now = moment().format("HH:mm");
     time = $("<p class='text-center'>").html("<strong>Current time: " + now + "</strong>");
