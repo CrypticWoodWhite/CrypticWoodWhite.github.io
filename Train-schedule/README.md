@@ -1,5 +1,4 @@
-# Train-schedule
-HW #7 due 2/5/19
+# Train schedule
 
 ### Overview
 
@@ -11,4 +10,3 @@ HW #7 due 2/5/19
 ### Links
 * Github: https://github.com/CrypticWoodWhite/Train-schedule
 * Git page: https://crypticwoodwhite.github.io/Train-schedule/
-* Portfolio: https://crypticwoodwhite.github.io/Bootstrap-Portfolio/portfolio.html

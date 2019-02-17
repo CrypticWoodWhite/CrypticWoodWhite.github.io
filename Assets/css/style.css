@@ -1,0 +1,26 @@
+.pure-img-responsive {
+    max-width: 200px;
+}
+
+.portfolio {
+    border: 2px solid rgb(176, 202, 219);
+}
+
+.portfolio:hover, .portfolio:active {
+    outline: 0;
+    border-color: #129FEA;
+}
+
+#profilepic {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

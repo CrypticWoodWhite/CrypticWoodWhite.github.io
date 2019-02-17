@@ -1,7 +1,4 @@
-# Trivia-Game
-UW Boot Camp section UWASEA201811FSF5
-JavaScript Assignment 2
-HW# 5 due 1/19/19
+# Trivia Game
 
 ### Basics of the game
 1. Click on the start button to start the game

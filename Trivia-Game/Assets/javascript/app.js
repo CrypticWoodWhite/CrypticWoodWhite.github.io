@@ -53,7 +53,7 @@ $("#restart").on("click", function() {
     $("#question").removeClass("hidden");
     $("#answers").removeClass("hidden");
     guess = undefined;
-    currentQuestion = undefined;
+    currentQuestion = 0;
     rightAnswer = undefined;
     isCorrect = undefined;
     counter = 30;

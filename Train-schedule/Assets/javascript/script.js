@@ -107,5 +107,3 @@ $("#table-body").on("click", ".remove", function() {
 function removeData(key) {
     trainDatabase.ref(key).remove();
 }
-
-
