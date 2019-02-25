@@ -22,5 +22,10 @@
 }
 
 .show {
-    display: block;
+    display: inline;
+}
+
+
+.post-images {
+    margin-bottom: -1em;
 }
