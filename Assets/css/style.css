@@ -1,14 +1,27 @@
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.container {
+    flex: 1;
+}
+
 .portfolio {
-    border: 3px solid rgb(176, 202, 219);
+    border: 3px solid #99CC99;
+    /* border: 3px solid rgb(176, 202, 219); original */
     max-width: 200px;
     min-width: 100px;
     height: auto;
     margin-right: 1em;
 }
 
-.portfolio:hover, .portfolio:active {
+.portfolio:hover, .portfolio:active, .portfolio:focus {
     outline: 0;
-    border-color: #129FEA;
+    border-color: #993300;
+    /* border-color: #129FEA; original */
 }
 
 #profilepic {
@@ -26,3 +39,66 @@
 .show {
     display: block;
 }
+
+.links {
+    max-width: 200px;
+    height: auto;
+}
+
+#to-top {
+    font-size: 80%;
+    border: 2px solid #99CC99;
+    color: rgba(0,0,0,.8);
+}
+
+#to-top:hover, #to-top:active, #to-top:focus {
+    border: 2px solid #993300;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+}
+
+.contact {
+    background-color: transparent;
+    border: none;
+    color: #99CC99;
+}
+
+.contact:hover, .contact:active, .contact:focus {
+    background-color: transparent;
+    color: #993300;
+}
+
+#contact-list {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    list-style: none;
+}
+
+#contact-list:hover, #contact-list:active, #contact-list:focus {
+    background: transparent;
+}
+
+.contact-item {
+    background: transparent;
+}
+
+.contact-item a, .contact-item a:hover, .contact-item a:focus, .contact-item a:active {
+    border: none;
+}
+
+.contact-item:hover, .contact-item:active, .contact-item:focus {
+    background: transparent;
+}
+
+.footer-meta {
+    color: #999;
+    font-size: 75%;
+}
+
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+    color: #993300;
+}
+

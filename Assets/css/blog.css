@@ -6,11 +6,14 @@
 
 a {
     text-decoration: none;
-    color: rgb(61, 146, 201);
+    color: #99CC99; /* this is probably too light */
+    /* color: #993300; */
+    /* color: rgb(61, 146, 201); original */
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    color: #993300;
+    /* text-decoration: underline; */
 }
 
 h3 {
@@ -31,10 +34,12 @@ h3 {
     text-align: center;
     top: auto;
     margin: 3em auto;
+    margin-bottom: 1em;
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: #003366;
+    /* background: rgb(61, 79, 93); original*/
     color: #fff;
     padding: 0;
 }
@@ -48,7 +53,8 @@ h3 {
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: #99CC99;
+    /* color: rgb(176, 202, 219); original */
 }
 
 .nav-list {
@@ -58,12 +64,13 @@ h3 {
 }
 .nav-item {
     display: inline-block;
-    *display: inline;
+    display: inline;
     zoom: 1;
 }
 .nav-item a {
     background: transparent;
-    border: 2px solid rgb(176, 202, 219);
+    border: 2px solid #99CC99;
+    /* border: 2px solid rgb(176, 202, 219); original*/
     color: #fff;
     margin-top: 1em;
     letter-spacing: 0.05em;
@@ -72,7 +79,8 @@ h3 {
 }
 .nav-item a:hover,
 .nav-item a:focus {
-    border: 2px solid rgb(61, 146, 201);
+    border: 2px solid #993300;
+    /* border: 2px solid rgb(61, 146, 201); original */
     text-decoration: none;
 }
 
@@ -112,7 +120,7 @@ h3 {
     color: #999;
     font-size: 90%;
     margin-top: -2em;
-    padding: 0.5em 3em 1em 1em;
+    padding: 0.5em;
 }
 
 .post-category {
@@ -151,11 +159,14 @@ h3 {
     padding: 1em 0;
 }
 .footer a {
-    color: #ccc;
-    font-size: 80%;
+    color: #99CC99;
+    /* font-size: 80%; */
 }
+
 .footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
+.footer .pure-menu a:focus,
+.footer .pure-menu a:active {
+    color: #993300;
     background: none;
 }
 
@@ -181,5 +192,9 @@ h3 {
 
     .footer {
         text-align: center;
+    }
+
+    .pure-menu-link, .pure-menu-link:hover, .pure-menu-link.active, .pure-menu-link.focus {
+        background: transparent;
     }
 }

@@ -36,10 +36,22 @@
                             </li>
                         </ul>
                     </nav>
+                    <br>
+                    <nav class="nav">
+                        <ul class="nav-list" id="contact-list">
+                            <!-- looking for a better way to hide email and phone from spambots
+                            Js script is probably best. No 100% method exists. -->
+                            <li class="nav-item contact-item"><a class="pure-button" href="mailto:crypticwoodwhite&#64;gmail.com" title="Email me"><i class="far fa-envelope fa-2x contact"></i></a></li>
+                            <li class="nav-item contact-item"><a class="pure-button" href="callto:&plus;17347806701" title="Call me"><i class="fas fa-phone fa-2x contact"></i></a></li>
+                            <li class="nav-item contact-item"><a class="pure-button" href="https://github.com/CrypticWoodWhite" target="_blank" title="View my GitHub profile"><i class="fab fa-github fa-2x contact"></i></a></li>
+                            <li class="nav-item contact-item"><a class="pure-button" href="https://www.linkedin.com/in/catherinephamcww/" target="_blank" title="View my LinkedIn profile"><i class="fab fa-linkedin fa-2x contact"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="content pure-u-1 pure-u-md-3-4" id="top">
-                <div class="posts pure-g">
+
+            <div class="content pure-u-1 pure-u-md-3-4 flex-wrapper" id="top">
+                <div class="posts pure-g container">
                     <section class="post pure-u-1">
                         <header class="post-header">
                             <h2 class="post-title">Portfolio</h2>
@@ -149,23 +161,16 @@
                         </div>
                         <br>
                         <br>
-                        <div class="posts pure-u-1">
-                            <a class="pure-button" href="#top">Return to top</a>
+                        <div class="pure-u-1">
+                            <a class="button-small pure-button" id="to-top" href="#top">Return to top</a>
                         </div>
-
                     </section>
                 </div>
-
+                
                 <div class="footer">
-                    <div class="pure-menu pure-menu-horizontal">
-                        <ul>
-                            <!-- looking for a better way to hide email and phone from spambots
-                                Js script is probably best. No 100% method exists. -->
-                            <li class="pure-menu-item"><a href="mailto:crypticwoodwhite&#64;gmail.com" class="pure-menu-link" title="Email me"><i class="far fa-envelope fa-2x"></i></a></li>
-                            <li class="pure-menu-item"><a href="callto:&plus;17347806701" class="pure-menu-link" title="Call me"><i class="fas fa-phone fa-2x"></i></a></li>
-                            <li class="pure-menu-item"><a href="https://github.com/CrypticWoodWhite" target="_blank" class="pure-menu-link" title="View my GitHub profile"><i class="fab fa-github fa-2x"></i></a></li>
-                            <li class="pure-menu-item"><a href="https://www.linkedin.com/in/catherinephamcww/" target="_blank" class="pure-menu-link" title="View my LinkedIn profile"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        </ul>
+                    <div class="footer-meta">
+                        <p>Copyright 2019 Catherine Pham</p>
+                        <p>Layout based on the <a href="https://purecss.io/" target="_blank">Pure.css</a> framework</p>
                     </div>
                 </div>
             </div>
