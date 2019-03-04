@@ -1,5 +1,7 @@
 .pure-img-responsive {
     max-width: 200px;
+    height: auto;
+    margin-right: 1em;
 }
 
 .portfolio {
@@ -22,10 +24,5 @@
 }
 
 .show {
-    display: inline;
-}
-
-
-.post-images {
-    margin-bottom: -1em;
+    display: block;
 }
