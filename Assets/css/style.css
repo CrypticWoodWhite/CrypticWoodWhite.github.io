@@ -1,11 +1,9 @@
-.pure-img-responsive {
+.portfolio {
+    border: 3px solid rgb(176, 202, 219);
     max-width: 200px;
+    min-width: 100px;
     height: auto;
     margin-right: 1em;
-}
-
-.portfolio {
-    border: 2px solid rgb(176, 202, 219);
 }
 
 .portfolio:hover, .portfolio:active {
