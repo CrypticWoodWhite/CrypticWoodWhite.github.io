@@ -17,7 +17,10 @@ a:focus {
 }
 
 h3 {
-    font-weight: 100;
+    width: inherit;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 
 /* LAYOUT CSS */
@@ -98,6 +101,10 @@ h3 {
     padding: 2em 1em 0;
 }
 
+.posts {
+    text-align: center;
+}
+
 .post {
     padding-bottom: 2em;
 }
@@ -119,8 +126,9 @@ h3 {
 .post-meta {
     color: #999;
     font-size: 90%;
-    margin-top: -2em;
+    margin-top: -1em;
     padding: 0.5em;
+    text-align: center;
 }
 
 .post-category {
@@ -147,16 +155,19 @@ h3 {
     margin: 1em 0;
 }
 .post-image-meta {
-    margin-top: -4em;
-    margin-left: 0.5em;
-    margin-right: -5em;
+    width: 100%;
+    margin-top: -3em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
     color: #fff;
     font-size:0.9em;
-    text-shadow: 0 1px 1px #333;
+    text-shadow: 1px 3px 3px #333;
 }
 
 .footer {
     padding: 1em 0;
+    text-align: center;
 }
 .footer a {
     color: #99CC99;
@@ -177,6 +188,7 @@ h3 {
     .content {
         padding: 2em 3em 0;
         margin-left: 25%;
+        text-align: left;
     }
 
     .header {
@@ -190,8 +202,12 @@ h3 {
         bottom: 0;
     }
 
-    .footer {
-        text-align: center;
+    .posts, .post-meta {
+        text-align: left;
+    }
+
+    .post-image-meta {
+        margin-left: 0.5em;
     }
 
     .pure-menu-link, .pure-menu-link:hover, .pure-menu-link.active, .pure-menu-link.focus {
