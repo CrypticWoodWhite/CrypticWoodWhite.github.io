@@ -7,6 +7,7 @@
 
 .container {
     flex: 1;
+    min-height: 100vh;
 }
 
 #profilepic {
@@ -19,7 +20,6 @@
 
 .portfolio {
     border: 3px solid #99CC99;
-    /* border: 3px solid rgb(176, 202, 219); original */
     max-width: 200px;
     min-width: 100px;
     height: auto;
@@ -28,7 +28,6 @@
 .portfolio:hover, .portfolio:active, .portfolio:focus {
     outline: 0;
     border-color: #993300;
-    /* border-color: #129FEA; original */
 }
 
 .project {
@@ -122,13 +121,6 @@
     .header {
         margin: 80% 2em 0 0.5em;
         text-align: right;
-    }
-
-    .header-flex {
-        display: flex;
-        max-height: 100vh;
-        flex-shrink: 1;
-        flex-direction: column;
     }
 
     .sidebar {

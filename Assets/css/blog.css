@@ -7,13 +7,10 @@
 a {
     text-decoration: none;
     color: #99CC99; /* this is probably too light */
-    /* color: #993300; */
-    /* color: rgb(61, 146, 201); original */
 }
 a:hover,
 a:focus {
     color: #993300;
-    /* text-decoration: underline; */
 }
 
 h3 {
@@ -24,10 +21,10 @@ h3 {
 }
 
 /* LAYOUT CSS */
-.pure-img-responsive {
-    /* max-width: 100%;
-    height: auto; */
-}
+/* .pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+} */
 
 #layout {
     padding: 0;
@@ -43,10 +40,10 @@ h3 {
 
 .sidebar {
     background: #003366;
-    /* background: rgb(61, 79, 93); original*/
     color: #fff;
     padding: 0;
     min-width: 225px;
+    overflow: auto;
 }
 
 .brand-title,
@@ -60,7 +57,6 @@ h3 {
 .brand-tagline {
     font-weight: 300;
     color: #99CC99;
-    /* color: rgb(176, 202, 219); original */
 }
 
 .nav-list {
@@ -76,7 +72,6 @@ h3 {
 .nav-item a {
     background: transparent;
     border: 2px solid #99CC99;
-    /* border: 2px solid rgb(176, 202, 219); original*/
     color: #fff;
     margin-top: 1em;
     letter-spacing: 0.05em;
@@ -86,7 +81,6 @@ h3 {
 .nav-item a:hover,
 .nav-item a:focus {
     border: 2px solid #993300;
-    /* border: 2px solid rgb(61, 146, 201); original */
     text-decoration: none;
 }
 
@@ -174,7 +168,6 @@ h3 {
 }
 .footer a {
     color: #99CC99;
-    /* font-size: 80%; */
 }
 
 .footer .pure-menu a:hover,
