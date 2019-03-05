@@ -18,7 +18,7 @@ a:focus {
 
 h3 {
     width: inherit;
-    font-weight: 400;
+    font-weight: 550;
     padding: 0;
     margin: 0;
 }
@@ -36,8 +36,9 @@ h3 {
 .header {
     text-align: center;
     top: auto;
-    margin: 3em auto;
+    margin-top: 3em;
     margin-bottom: 1em;
+    padding: 0;
 }
 
 .sidebar {
@@ -45,11 +46,13 @@ h3 {
     /* background: rgb(61, 79, 93); original*/
     color: #fff;
     padding: 0;
+    min-width: 225px;
 }
 
 .brand-title,
 .brand-tagline {
     margin: 0;
+    padding: 0;
 }
 .brand-title {
     text-transform: uppercase;
@@ -162,7 +165,7 @@ h3 {
     padding: 0;
     color: #fff;
     font-size:0.9em;
-    text-shadow: 1px 3px 3px #333;
+    text-shadow: 2px 3px 3px #333;
 }
 
 .footer {
@@ -179,38 +182,4 @@ h3 {
 .footer .pure-menu a:active {
     color: #993300;
     background: none;
-}
-
-
-/* MEDIA QUERIES */
-
-@media (min-width: 48em) {
-    .content {
-        padding: 2em 3em 0;
-        margin-left: 25%;
-        text-align: left;
-    }
-
-    .header {
-        margin: 80% 2em 0;
-        text-align: right;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-    }
-
-    .posts, .post-meta {
-        text-align: left;
-    }
-
-    .post-image-meta {
-        margin-left: 0.5em;
-    }
-
-    .pure-menu-link, .pure-menu-link:hover, .pure-menu-link.active, .pure-menu-link.focus {
-        background: transparent;
-    }
 }

@@ -2,7 +2,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .container {
@@ -110,3 +110,42 @@
     color: #993300;
 }
 
+/* MEDIA QUERIES */
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+        text-align: left;
+    }
+
+    .header {
+        margin: 80% 2em 0 0.5em;
+        text-align: right;
+    }
+
+    .header-flex {
+        display: flex;
+        max-height: 100vh;
+        flex-shrink: 1;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .posts, .post-meta {
+        text-align: left;
+    }
+
+    .post-image-meta {
+        margin-left: 0.5em;
+    }
+
+    .pure-menu-link, .pure-menu-link:hover, .pure-menu-link.active, .pure-menu-link.focus {
+        background: transparent;
+    }
+}
