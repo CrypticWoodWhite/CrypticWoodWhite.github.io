@@ -54,6 +54,7 @@
 #to-top {
     font-size: 80%;
     border: 2px solid #99CC99;
+    background-color: transparent;
     color: rgba(0,0,0,.8);
     margin-top: 4em;
 }
@@ -61,7 +62,7 @@
 #to-top:hover, #to-top:active, #to-top:focus {
     border: 2px solid #993300;
     text-decoration: none;
-    color: rgba(0,0,0,.8);
+    background: transparent;
 }
 
 .contact {
