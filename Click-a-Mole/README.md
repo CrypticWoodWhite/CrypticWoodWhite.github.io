@@ -7,6 +7,6 @@ This is the memory game version of Whack-a-Mole. There are 16 moles. The moles g
 HTML/CSS/JS, NodeJS, ExpressJS, ReactJS
 
 ### Links
+- https://crypticwoodwhite.github.io/Click-a-Mole/
 - https://crypticwoodwhite.github.io/portfolio.html
 - https://github.com/CrypticWoodWhite/Click-a-Mole
-- Live
