@@ -65,6 +65,14 @@
     background: transparent;
 }
 
+.contact-btn {
+    background: none;
+}
+
+.contact-btn:hover, .contact-btn:active, .contact-btn:focus {
+    background: none;
+}
+
 .contact {
     background-color: transparent;
     border: none;
@@ -72,8 +80,19 @@
 }
 
 .contact:hover, .contact:active, .contact:focus {
-    background-color: transparent;
+    background: transparent!important;
     color: #993300;
+}
+
+svg {
+    height: 32px;
+    width: 32px;
+    fill: #99CC99;
+}
+
+svg:hover, svg:active, svg:focus {
+    background: transparent!important;
+    fill: #993300;
 }
 
 #contact-list {
