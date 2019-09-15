@@ -3,9 +3,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .hero-heading {
     color: white;
 }
+
 .hero-subheading {
     color: white;
     font-style: italic;
@@ -19,15 +21,18 @@
     margin-left: 25px;
     line-height: 6.5rem;
 }
+
 .contact-btn {
     color: black;
     
 }
+
 svg {
     height: 16px;
     width: 16px;
     fill: black;
 }
+
 svg:hover, svg:active, svg:focus {
     background: transparent!important;
     fill: #929196;
@@ -39,17 +44,21 @@ svg:hover, svg:active, svg:focus {
     text-align: left;
     text-transform: uppercase;  
 }
+
 .section-subtitle {
     text-align: left;
     font-style: italic;
     font-size: 1.75rem;
 }
+
 p {
     text-align: left;
 }
+
 .navbar-list {
     text-align: center;
 }
+
 #portrait {
     float: left;
     margin: 0 1rem 1rem 0;
@@ -71,15 +80,18 @@ p {
     position: relative;
     text-align: left;
 }
+
 .thumbnail-img {
     border: 3px solid #333;
     max-width: 200px;
     height: auto;
 }
+
 .thumbnail-img:hover,.thumbnail-img:active,.thumbnail-img:focus {
     border: 3px solid #929196;
     cursor: pointer;
 }
+
 .thumbnail-caption {
     position: absolute;
     top: 15rem;
@@ -89,12 +101,15 @@ p {
     font-weight: 600;
     text-shadow: 2px 3px 3px rgb(29, 29, 29);
 }
+
 .work-desc {
     padding: 0 1rem 0 1rem;
 }
+
 .hide {
     display: none;
 }
+
 .show {
     display: block;
 }
@@ -109,10 +124,12 @@ p {
 .contact-footer {
     list-style: none;
 }
+
 .contact-footer-item {
     display: inline;
     margin: 0 10px 0 10px;
 }
+
 #footer {
     font-size: 1rem;
     text-align: center;
