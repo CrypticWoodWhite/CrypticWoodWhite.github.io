@@ -1,163 +1,120 @@
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+.hero {
+    background-image: url(../images/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-heading {
+    color: white;
+}
+.hero-subheading {
+    color: white;
+    font-style: italic;
 }
 
-.container {
-    flex: 1;
-    min-height: 100vh;
+/* CONTACT */
+.contact-item {
+    position: relative;
+    float: right;
+    margin-bottom: 0;
+    margin-left: 25px;
+    line-height: 6.5rem;
+}
+.contact-btn {
+    color: black;
+    
+}
+svg {
+    height: 16px;
+    width: 16px;
+    fill: black;
+}
+svg:hover, svg:active, svg:focus {
+    background: transparent!important;
+    fill: #929196;
 }
 
-#profilepic {
+/* SECTIONS */
+
+.section-title {
+    text-align: left;
+    text-transform: uppercase;  
+}
+.section-subtitle {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.75rem;
+}
+p {
+    text-align: left;
+}
+.navbar-list {
+    text-align: center;
+}
+#portrait {
     float: left;
-    margin-right: 1em;
-    margin-bottom: 1em;
+    margin: 0 1rem 1rem 0;
     max-width: 175px;
     height: auto;
 }
 
-.portfolio {
-    border: 3px solid #99CC99;
+/* TESTIMONIALS */
+.testimonials-name {
+    color: #929196;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* MY WORK */
+
+.thumbnail {
+    position: relative;
+    text-align: left;
+}
+.thumbnail-img {
+    border: 3px solid #333;
     max-width: 200px;
-    min-width: 100px;
     height: auto;
 }
-
-.portfolio:hover, .portfolio:active, .portfolio:focus {
-    outline: 0;
-    border-color: #993300;
+.thumbnail-img:hover,.thumbnail-img:active,.thumbnail-img:focus {
+    border: 3px solid #929196;
+    cursor: pointer;
 }
-
-.project {
-    padding: 0;
-    margin: 0;
+.thumbnail-caption {
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 3px 3px rgb(29, 29, 29);
 }
-
+.work-desc {
+    padding: 0 1rem 0 1rem;
+}
 .hide {
     display: none;
 }
-
 .show {
-    display: inline-block;
+    display: block;
 }
 
-.links {
-    max-width: 200px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: -1em;
-    margin-bottom: 1em;
+/* SKILLS */
+.web-dev-skills-list, .skills-li {
+    text-align: left;
+    padding-left: 2rem;
 }
 
-#to-top {
-    font-size: 80%;
-    border: 2px solid #99CC99;
-    background-color: transparent;
-    color: rgba(0,0,0,.8);
-    margin-top: 4em;
-}
-
-#to-top:hover, #to-top:active, #to-top:focus {
-    border: 2px solid #993300;
-    text-decoration: none;
-    background: transparent;
-}
-
-.contact-btn {
-    background: none;
-}
-
-.contact-btn:hover, .contact-btn:active, .contact-btn:focus {
-    background: none;
-}
-
-.contact {
-    background-color: transparent;
-    border: none;
-    color: #99CC99;
-}
-
-.contact:hover, .contact:active, .contact:focus {
-    background: transparent!important;
-    color: #993300;
-}
-
-svg {
-    height: 32px;
-    width: 32px;
-    fill: #99CC99;
-}
-
-svg:hover, svg:active, svg:focus {
-    background: transparent!important;
-    fill: #993300;
-}
-
-#contact-list {
-    margin: 0;
-    padding: 0;
-    background: transparent;
+/* FOOTER */
+.contact-footer {
     list-style: none;
 }
-
-#contact-list:hover, #contact-list:active, #contact-list:focus {
-    background: transparent;
+.contact-footer-item {
+    display: inline;
+    margin: 0 10px 0 10px;
 }
-
-.contact-item {
-    background: transparent;
-}
-
-.contact-item a, .contact-item a:hover, .contact-item a:focus, .contact-item a:active {
-    border: none;
-}
-
-.contact-item:hover, .contact-item:active, .contact-item:focus {
-    background: transparent;
-}
-
-.footer-meta {
-    color: #999;
-    font-size: 75%;
-}
-
-.footer a:hover,
-.footer a:focus,
-.footer a:active {
-    color: #993300;
-}
-
-/* MEDIA QUERIES */
-
-@media (min-width: 48em) {
-    .content {
-        padding: 2em 3em 0;
-        margin-left: 25%;
-        text-align: left;
-    }
-
-    .header {
-        margin: 80% 2em 0 0.5em;
-        text-align: right;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-    }
-
-    .posts, .post-meta {
-        text-align: left;
-    }
-
-    .post-image-meta {
-        margin-left: 0.5em;
-    }
-
-    .pure-menu-link, .pure-menu-link:hover, .pure-menu-link.active, .pure-menu-link.focus {
-        background: transparent;
-    }
+#footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
 }

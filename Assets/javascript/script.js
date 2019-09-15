@@ -1,4 +1,4 @@
-$(".post-images").on("click", function(event) {
+$(".thumbnail-img").on("click", function(event) {
     event.preventDefault();
     if ($(this).siblings("p").hasClass("hide")) {
         $(this).siblings("p").removeClass("hide");
